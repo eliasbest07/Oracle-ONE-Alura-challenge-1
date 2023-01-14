@@ -69,6 +69,7 @@ body {
     border-radius: 50%;
     background-image: linear-gradient(45deg, #ffd800, #ff5520);
   }
+
   @media screen and (max-width: 480px) {
     .text-gradient-01 {
     font-size: 2rem;
@@ -89,6 +90,11 @@ body {
     font-size: 1rem;
     
     resize: none;
+  }
+  ion-icon{
+    color: #fff;
+    height: 40px;
+    width: 40px;
   }
   textarea{
     width: 90%;
