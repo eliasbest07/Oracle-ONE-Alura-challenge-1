@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.box {
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .logo {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  .text-gradient-01 {
+    font-size: 4rem;
+   margin-left: 25px;
+    background: linear-gradient(90deg, #64acff, #3bf0e4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .text-gradient-02 {
+    font-size: 25px;
+    background: linear-gradient(45deg, #db469f, #2188ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: #fff;
+  }
+  .login-form-input {
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border: solid 1px rgba(255, 255, 255, .5);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.178);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+
+  }
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    padding: 30px 20px;
+    border: solid 1px rgba(255, 255, 255, .5);
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .1),
+               -4px -4px 10px rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, .1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
+  .circle-01 {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #ffd800, #ff5520);
+  }
+  @media screen and (max-width: 480px) {
+    .text-gradient-01 {
+    font-size: 2rem;
+    }
+    .text-gradient-02 {
+    font-size: 2.25rem;
+    }
+  }
+  .login-form-input {
+    width: 50%;
+    height: 150px;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border: solid 1px rgba(255, 255, 255, .5);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    font-size: 1rem;
+    
+    resize: none;
+  }
+  textarea{
+    width: 90%;
+    height: 250px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-size: 2vw;
+   background-color: rgba(255, 255, 255, 0);
+   color: #fff;
+   
+    scrollbar-width: thin;
+}
+::placeholder { color: white; }
+  .login-form-input::placeholder {
+    color: rgba(255, 255, 255, .8);
+  }
+  .login-form-btn {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #3d3935;
+    font-size: 1.25rem;
+    outline: none;
+    cursor: pointer;
+  }
+  .text {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .text a {
+    color: #fff;
+  }
+  .login-form-btn:hover,
+  .text a:hover {
+    opacity: .8;
+  }
+#container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+ 
+  background: url(https://demo.plantpot.works/1128/bg.png);
+  background-size: cover;
+}
+.wave {
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: -5px;
+  left: 0;
+  background-image: url(https://demo.plantpot.works/1128/wave.png);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  animation: wave 8s linear infinite;
+}
+.wave::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: -5px;
+  left: 0;
+  background-image: url(https://demo.plantpot.works/1128/wave.png);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  opacity: .2;
+  animation: wave-reverse 8s linear infinite;
+}
+.wave::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  padding-top: 12%;
+  top: -5px;
+  left: 0;
+  background-image: url(https://demo.plantpot.works/1128/wave.png);
+  background-repeat: repeat-x;
+  background-size: 100%;
+  opacity: .8;
+  animation-delay: -4s;
+  animation: wave 16s linear infinite;
+}
+@keyframes wave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100vw;
+  }
+}
+@keyframes wave-reverse {
+  0% {
+    background-position: 100vw;
+  }
+  100% {
+    background-position: 0;
+  }
+}
