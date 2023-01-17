@@ -14,18 +14,19 @@
     </svg>
     <div class="circle-01"></div>
     <div id="container">
-        <div class="grid">
+        
        
         <div class="box">
             <p class="text-gradient-01">♦Encriptar mensaje♦</p>
-            
+            <button id="btnpase" class="form-pase-btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" class="icon-pase" viewBox="0 0 512 512"><title>Intercambiar texto</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M304 48l112 112-112 112M398.87 160H96M208 464L96 352l112-112M114 352h302"/></svg></button>
               <div class="basic">
-             
+               
                 <nav>
                     <div class="box">
                         <div class="form-box">
-                          <div class="ic-account"></div>
-                          <textarea   name="txt-input" id="txt-input" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
+                          <button id="btninfo" class="form-info-btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" class="icon-info" viewBox="0 0 512 512"><title>Información</title><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z"/></svg></button>
+                          <button id="btnclearinput" class="form-clear-btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" class="icon-clear" viewBox="0 0 512 512"><title>Borrar texto</title><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 320L192 192M192 320l128-128"/></svg></button>
+                          <textarea id="inputext" clase="txtinput" name="txt-input" id="txt-input" cols="30" rows="10" placeholder="Ingrese mensaje a encriptar aquí"></textarea>
                         </div>
                         
                     </div>
@@ -33,40 +34,36 @@
                 </nav>
                 <div class="main">
                   <div class="box">
-                    <div class="form-box">
-                      <div class="ic-account"></div>
-                      <p id="inputext" class="text-gradient-02" onscroll="addGradient()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et consequuntur atque recusandae, officia deserunt mollitia! Deserunt rem minima, repellat nostrum eaque sed quasi asperiores sint id laudantium suscipit sit quaerat obcaecati earum iure! Tenetur, modi accusantium, voluptatem deleniti perspiciatis magni nobis velit dignissimos hic cupiditate repellendus culpa maxime ut assumenda consequuntur soluta impedit quod ex iste adipisci natus repudiandae quia! Eaque similique sequi aperiam nostrum corrupti, animi molestiae eum recusandae cupiditate, officiis praesentium quisquam quasi iure sint. Quod at assumenda temporibus provident nulla, necessitatibus culpa deleniti inventore similique velit libero, quae est vero voluptatum nihil eius sunt aliquam, id a doloribus consequuntur. Enim provident incidunt tempora tempore dicta odio voluptatum, eos repudiandae voluptate! Consequatur quis minus sunt voluptatem itaque nulla rem enim ducimus exercitationem, totam dolorem natus, necessitatibus consectetur a at ipsa tempore magnam laudantium velit odit, temporibus pariatur hic. Voluptas excepturi mollitia in optio velit, neque quaerat unde voluptatibus rem veniam. Totam dolor iure repellat molestiae rerum voluptatem quidem consectetur voluptate at! Eos consequatur voluptatem veritatis officia, dignissimos culpa veniam dolorem aliquid, perspiciatis atque dolorum non ducimus eum molestias maxime dolor! Reprehenderit praesentium perspiciatis suscipit ad vitae, laborum molestias sed earum sunt quis beatae commodi nobis doloremque excepturi corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam amet error sit blanditiis. Veniam doloremque nulla beatae maiores fugit perferendis facilis illum aut velit dolor soluta, rem, hic laborum fuga! Elias Best todo el texto mucho mas texto asjfsafas afsfasf asfas asdfsa fsa fsa fas gas gsa gsa ga sg agwg a</p>
+                    <div class="form-box-show">
+                      <img id="img" class="image" src="encriptado.jpg">
+                      <p id="showtext" class="text-show"></p>
+                      <button id="btncopy" class="form-copy-btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" class="icon-copy" viewBox="0 0 512 512"><title>Copiar</title><path d="M307.94 248L216 154.52V242a6 6 0 006 6z"></path><path d="M184 268V144H60a12 12 0 00-12 12v328a12 12 0 0012 12h248a12 12 0 0012-12V280H196a12 12 0 01-12-12zM366 120h85.94L360 26.52V114a6 6 0 006 6z"></path><path d="M340 152a12 12 0 01-12-12V16H172a12 12 0 00-12 12v84h42.12A40.81 40.81 0 01231 124.14l109.16 111a41.11 41.11 0 0111.83 29V400H452a12 12 0 0012-12V152z"></path></svg></button>
+                      <button id="btnclearshow" class="form-clea-btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" class="icon-clear" viewBox="0 0 512 512"><title>Borrar texto</title><path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 320L192 192M192 320l128-128"/></svg></button>
                     </div>
-                    <div class="box">
-                      <div class="form-box-btn">
-                        <div class="ic-account"></div>
-                        <ion-icon name="documents-sharp"></ion-icon>
-                      </div>
-                  </div> 
+                   
                 </div> 
                 </div>
                 
-              
-                
-               
-               
             </div>
              <!-- <input class="login-form-input" type="text" name="your-email" placeholder="Escribe el mensaje a encriptar" required> -->
-            
-            <p class="text"> Introduce solo letras minúsculas y sin acentos</p>
+            <div class="text">
+              <ion-icon class="icon-alert" name="alert-circle-outline"></ion-icon>
+              <p id="text" > Introduce solo letras minúsculas y sin acentos</p>
+            </div>
+          
             <!-- <p class="text-gradient-02">Elias Best todo el texto</p> -->
-        
-            <button class="login-form-btn" type="submit">Codificar</button>
-            <button class="des-form-btn" type="submit">Descodificar</button>
+       
+            <button id="btn-input" class="login-form-btn" type="submit">Encriptar</button>
+            <button id="btn-desenc" class="des-form-btn" type="submit">Desencriptar</button>
         <div class="wave"></div>
       </div>
       
       <footer>
-        <p>BTM Studio by Elias Montinlla 'Elias Best'</p>
+        <p>BTM Studio by Elias Montilla 'Elias Best'</p>
         <ul>
-          <li><a href="#">linkedin</a></li>
-          <li><a href="#">Portal Apps</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="https://www.linkedin.com/in/elias-montilla-629110229/"> <ion-icon class="icon-alert" name="logo-linkedin"></ion-icon>LinkedIn</a></li>
+          <li><a href="https://cumple.tugrandoportunidad.net/"><ion-icon name="code-outline"></ion-icon> Portal Apps</a></li>
+
         </ul>
       </footer>
       <script src="main.js"></script>
